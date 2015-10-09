@@ -52,6 +52,12 @@ module.exports = function (grunt) {
         files: ['<%= yeoman.app %>/styles/{,*/}*.css'],
         tasks: ['newer:copy:styles', 'autoprefixer']
       },
+      
+      less: {
+          files: ["<%= yeoman.app %>/styles-less/{,*/}*.less"],
+          tasks: ["less:server"]
+      },
+
       gruntfile: {
         files: ['Gruntfile.js']
       },
@@ -213,6 +219,43 @@ module.exports = function (grunt) {
           '<%= yeoman.dist %>/styles/fonts/*'
         ]
       }
+    },
+
+    
+    less: {
+        server: {
+            options: {
+                strictMath: true,
+                dumpLineNumbers: true,
+                sourceMap: true,
+                sourceMapRootpath: "",
+                outputSourceFiles: true
+            },
+            files: [
+                {
+                    expand: true,
+                    cwd: "<%= yeoman.app %>/styles-less",
+                    src: "{,*/}*.less",
+                    dest: ".tmp/styles",
+                    ext: ".css"
+                }
+            ]
+        },
+        dist: {
+            options: {
+                cleancss: true,
+                report: 'min'
+            },
+            files: [
+                {
+                    expand: true,
+                    cwd: "<%= yeoman.app %>/styles-less",
+                    src: "{,*/}*.less",
+                    dest: ".tmp/styles",
+                    ext: ".css"
+                }
+            ]
+        }
     },
 
     // Reads HTML for usemin blocks to enable smart builds that automatically
