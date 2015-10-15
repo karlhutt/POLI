@@ -1,0 +1,1109 @@
+
+
+
+// VARIABLES 
+
+@color-principal: 	#9BC103;
+@color-secundario: 	#71c1c0;
+@color-light: 		#fff;
+
+@color-rojo: 		#ff4c00;
+@color-celeste: 	#06a2c9;
+@color-dark: 		#666;
+@color-fondo: 		#fffbee;
+
+// FONTS
+
+@font-face {
+  font-family: 'Aller_Bd';
+  src:  url('/fonts/Aller_Bd.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Aller_Lt';
+  src:  url('/fonts/Aller_Lt.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Aller';
+  src:  url('/fonts/Aller_Rg.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Aller_LtIt';
+  src:  url('/fonts/Aller_LtIt.woff') format('woff');
+}
+
+// GENERAL
+
+body {
+
+	font-family: Aller;
+}
+
+h5 {
+
+	font-size: 14pt;
+}
+
+a {
+
+	color: @color-principal; 
+
+	&:hover {
+
+		color: @color-secundario; 
+	}
+}
+
+
+.centered_all {
+
+	margin-left: auto;
+
+	margin-right: auto; 
+}
+
+
+.centered_90 {
+
+	.centered_all;
+
+	width: 90%;
+
+}
+
+.centered_80 {
+
+	.centered_all;
+
+	width: 80%;
+
+}
+
+.centered_70 {
+
+	.centered_all;
+
+	width: 70%;
+
+}
+
+.gap {
+
+	height: 40px;
+}
+
+.mini_gap {
+
+	height: 20px; 
+}
+
+
+.full_width {
+
+	width: 100%;
+}
+
+
+a, a:hover, a:active, a:focus {
+
+	text-decoration: none;
+
+	outline: 0px none;
+}
+
+
+
+// PORTADA
+
+#encabezado {
+
+    height: 72vh;
+
+    background-color: #9bc103;    
+}
+
+#bienvenida {
+
+	position: absolute;
+
+	top: 15%;
+
+	right: 0px;
+
+	background: rgba(54, 25, 25, .2);
+
+	color:#FFF;
+
+	opacity: 0.7;
+
+	border-radius: 8px 0px 0px 8px;
+
+	padding: 0px 20px 10px 30px;
+
+	max-width: 50%;
+
+	width: 50%;
+
+	p {
+
+   		line-height: 12pt;
+
+  		font-size: 15pt;
+  	}
+
+  	h1 {
+	
+		line-height: 42px;
+	
+		margin: 30px 0px 20px;
+	
+		color: #FFF;
+	
+	}
+}
+
+
+// LIQUID SLIDER 
+
+.panel-wrapper {
+
+    text-align: left !important;
+
+    //border-left: 6px solid @color-principal;
+}
+
+
+
+// ACCORDION
+
+.panel-group {
+
+    margin-bottom: 20px;
+
+    width: 100%;
+
+    margin-left: auto;
+
+    margin-right: auto;
+}
+
+.panel {
+
+    margin-bottom: 20px;
+
+    background-color: #FFF;
+
+    border: 0px solid transparent;
+
+    border-radius: 0;
+
+    box-shadow: none;
+
+    //box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.05);
+}
+
+
+.panel-default > .panel-heading {
+
+    border-radius: 0;
+}
+
+#accordion_ElPoli {
+
+	.panel-default > .panel-heading {
+
+	    color: @color-principal;
+	    
+	    background-color: #fff;
+	}
+
+	.panel-body i {
+
+		color: @color-principal;
+	}
+}
+
+#accordion_QuienesSomos {
+
+	li small{
+
+		opacity: 0.7; 
+
+		font-size: 70%;
+
+		padding-left: 6px;
+
+		letter-spacing: 1px;
+
+		color: @color-celeste;
+
+	}
+
+	& .panel-default > .panel-heading {
+
+	    color: @color-celeste;
+	    
+	    background-color: #fff;
+
+	}
+
+	.panel-body i {
+
+		color: @color-celeste;
+	}
+}
+
+.panel-title {
+
+    margin-top: 0px;
+
+    margin-bottom: 0px;
+
+    margin-left: 20px;
+
+    font-size: 14pt;
+
+    line-height: 2;
+
+    color: inherit;
+
+    letter-spacing: 2px;
+
+    i {
+
+    	font-size: 26pt;
+    }
+}
+
+
+.panel-body {
+
+	width: 90%;
+
+	//border-color: @color-principal;
+
+	margin-left: auto; 
+
+	margin-right: auto; 
+
+	img {
+
+		border-radius: 0.8em; 
+	}
+
+	li {
+
+		font-family: Aller_Lt;
+
+		line-height: 1;
+
+		margin-bottom: 20px;
+
+		font-size: 140%;
+
+		i {
+
+			font-size: 100%; 
+
+			//padding-left: 20px;
+
+			display: inline-block;
+
+			vertical-align: text-bottom;
+		}
+	}
+
+	p {
+
+		font-family: Aller_Lt;
+
+		font-size: 14pt;
+
+		line-height: 1.4;
+
+		font-weight: 100;
+
+		margin-bottom: 20px; 
+	}
+
+	i {
+
+		font-size: 120%; 
+
+		width: 30px; 
+
+		text-align: center;
+	}
+
+}
+
+
+
+
+
+
+#grilla_amigos {
+
+	padding: 0 20px;
+
+	text-align: left;
+
+	.ficha_amigo {
+
+		.centered_90;
+
+		border-radius: 0.8em;
+
+		//border: 1px solid @color-principal;
+
+		background-color: @color-fondo;
+
+		box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+
+		//color: @color-light;
+
+		margin-top: 20px; 
+
+		h4 {
+
+			padding: 10px 10px 20px 10px;
+
+			color: @color-dark;
+
+			font-size: 12pt;
+
+			&:hover {
+
+				color: @color-secundario;
+			}
+
+		}
+
+		&:hover {
+
+			//box-shadow: 2px 2px 4px rgba(46, 116, 133, 0.3);
+		}
+
+	}
+
+	img {
+
+		width: 100%;
+
+		border-radius: 0.8em 0.8em 0 0;
+
+		//box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+
+		//border: 1px solid #fff;
+
+		&:hover {
+
+			opacity: 0.9;
+		}
+	}
+
+}
+
+.sec_descripcion {
+
+	margin-left: 40px;
+
+	//margin-right: 20px;
+
+	max-width: 800px;
+
+	p {
+
+		font-family: Aller_LtIt;
+
+		font-size: italic; 
+
+		font-size: 16pt;
+
+		line-height: 1.3;
+
+		margin-bottom: 20px;
+
+		opacity: 0.7;
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+// POR REVISAR!!!
+
+
+.titulo {
+  fill: #ff4c00;
+}
+
+h3 {
+	font-family: YoungForever;
+	letter-spacing: 3pt;
+	text-transform: uppercase;
+	font-size: 20pt;
+	font-weight: 300;
+    margin: 0px 0px 20px;
+}
+
+
+h4 {
+	font-family: Aller;
+	font-size: 14pt;
+	font-weight: 300;
+}
+
+.contacto {
+	height:60px;
+}
+
+.pie-pasto {
+    position: relative;
+    float: right;
+    top: -23px;
+}
+
+.logo-appa {
+    margin-left: 30px;
+    margin-bottom: 30px;
+    width: 15%;
+    max-width: 240px;
+}
+
+.pie-de-pag {
+	position: relative;
+	background: none repeat scroll 0% 0% #9BC103;
+}
+
+.flor {   
+	 position: relative;
+    bottom: 0px;
+    margin-left: 60%;
+    width: 2%;
+}
+
+.horarios {
+	width: 50%;
+}
+
+.logoADICIONAL {
+	width: 100%;
+}
+
+.colLogoAppa {
+	width: 15%;
+}
+
+.colSJDP{
+	width: 17%;
+}
+
+.colFV {
+	width: 22%;
+}
+
+.colHisp {
+	width: 20%;
+}
+
+.logoAppa {
+	width: 100%;
+	max-width: 163px;
+}
+
+.textoClarito {
+    font-weight: 400 !important;
+    color: #9E9E9E;
+    padding: 0px;
+    margin-bottom: 0em;
+    height: 10%;
+}
+
+th {
+	font-weight: 400 !important;
+}
+
+.preciotd {
+	vertical-align: top !important;
+	width: 50%;
+}
+
+.iconoHorario {
+	width: 20px;
+}
+
+.dirigidoA {
+	height: 28px;
+}
+
+.dirigidoAtd {
+	vertical-align: top !important;
+}
+
+.infoAdicional {
+	color: #404040;
+	padding-left: 55px;
+	text-indent: -20px
+}
+
+.ls-nav-right-arrow{
+  visibility: hidden !important;
+}
+
+.ls-nav-left-arrow{
+  visibility: hidden !important;
+}
+
+#disenio {   
+	position: absolute;
+	left: 81%;
+	width: 7%;
+	top: 8%;	
+   box-shadow: none; 
+   border-radius: 0.4em;
+}
+
+#disenio:hover {
+    //box-shadow: 5px 5px 10px #83982d; 
+   //border-radius: 0.4em;
+}
+
+blockquote {
+	text-align:left; 
+	margin-left:0px !important;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 14pt;
+    font-weight: 100 !important;
+    letter-spacing: 0.5pt;
+    line-height: 18pt;
+    color: #666666 !important;
+}
+
+.voluntarios-lista {
+  margin: 20px 0 20px 30px;
+}
+
+.voluntarios-lista h5{
+  text-indent: -10px;
+  font-weight: 100;
+  color: #666;
+  margin-bottom: 5px !important;
+}
+
+
+.miembros-asoc h4 {
+  margin: 10px 0px 10px;
+  font-size: 12pt;
+  line-height: 1.6;
+  color: #666;
+}
+
+
+h4.patrocinadores-lista{
+  font-size: 12pt;
+  margin-top: 20px;
+  line-height: 1.6;
+  margin-left: 10px;
+  color: #666;
+}
+
+.subtitulo {
+	background-color: #c9d69f;
+	padding-bottom: 1.4em;
+	text-align:left; 
+}
+
+.subtitulo p{	
+	margin-left:30px;
+    margin-top: 30px;
+    margin-bottom: 0px;
+    font-size: 14pt;
+    font-weight: 300;
+    letter-spacing: 0.5pt;
+    line-height: 18pt;
+    text-decoration: none;
+    font-style: normal;
+    color: #fff;
+}
+
+
+#boton-contacto { 
+    position: absolute;  
+    background: none repeat scroll 0% 0% #9BC103;
+    color: #FFF !important;
+    right: 30%;
+    margin-top: 3%;
+    font-family: YoungForever;
+    font-size: 16pt;
+    letter-spacing: 3pt;
+    padding: 24px;    
+    box-shadow: none;
+    
+    /*background: url(http://appa.siguiendolaluna.org/imagenes/icons/disenio.png) no-repeat;*/
+    
+    border-radius: 0.2em;
+}
+
+#boton-contacto:hover { 
+    background: none repeat scroll 0% 0% #FFF;
+    color: #9BC103 !important;  
+    /*background: url(http://appa.siguiendolaluna.org/imagenes/icons/kh.png) no-repeat;*/
+    
+    border: 0px none;   
+    box-shadow: 5px 5px 10px #83982d; 
+}
+
+h1 
+{
+	font-family: "Aller";
+}
+
+h2 
+{
+	font-family: "Aller";
+}
+
+p{
+	font-size: 16px;
+	line-height: 20px;
+}
+
+
+body,
+button,
+input,
+select,
+textarea {
+	//color: #9BC103;
+	font-family: "Aller";
+	//font-size: 14px;
+	//line-height: 16px;
+}
+
+/*
+body {
+	background: none repeat scroll 0% 0% #AAD400;	
+}*/
+
+
+.amarillo {
+	fill: yellow;
+}
+
+
+.back-to-top {
+    position: fixed;
+    bottom: 2em;
+    right: 0px;
+	 font-family: "Aller-Display";
+    text-decoration: none;
+    color: #fff !important;
+    background-color: #AAD400;
+    font-size: 22px;
+    padding: 1em;
+    display: none;
+    border-radius:0.2em 0em 0em 0.2em;
+}
+
+.back-to-top:hover {    
+    background-color: rgba(135, 135, 135, 0.50);
+}
+
+
+
+
+.svg-container { 
+	display: inline-block;
+	position: relative;
+	width: 100%;
+	padding-bottom: 95%; 
+	vertical-align: middle; 
+	overflow: hidden; 
+	height: 50px;
+}
+
+
+
+.svg-content { 
+	 display: inline-block;
+	 position: absolute;
+	 top: 0;
+	 left: 0;
+}
+
+
+.isologo {
+	position: absolute;
+	top: 20%; 
+	left:19%;
+	width: 15%;
+}
+
+.nubes {
+	position: absolute;
+	top: 5%; 
+	left: 0%;
+	width: 40%;
+}
+
+.TIT {
+	position: absolute;
+	top: 50%; 
+	right: 2%;
+	width: 28%;
+}
+
+.FLECHA {
+	fill: #000;
+	position: absolute;
+	top: 50%; 
+	left: 45%;
+	width: 4%;
+	opacity: 0.2;
+}
+
+.FLECHA:hover {
+	fill: #FFF;
+}
+
+
+.grilla-de-eventos {
+	/*padding-left: 1.3%;*/
+}
+
+.texto-titulo {
+	display: none;
+}
+
+
+
+
+
+#revista h1 {
+	font-family: "Aller-Display";
+}
+
+#revista td {
+	padding: 0px 40px 0px 50px;
+	vertical-align: top;
+}
+
+#revista img {
+	float: right;
+	margin:0px 60px 20px 30px;
+}
+
+.listado { 
+	font-weight: 600;
+}
+
+#contacto-link {
+	color: #698300;
+	fill: #698300;
+	position: absolute;
+	width: 8%;
+	top: 82vh;
+	right: 3vh;
+}
+
+#contacto-link a {
+	fill: #698300;
+}
+
+#contacto-link a:hover {
+	fill: #FFF;
+}
+
+#niños-jugando img {
+	position: absolute;
+	width: 12%;
+	top: 86vh;
+	right: 24%;
+}
+
+.smooth_slider .smooth_slideri{
+	width: 100% !important;
+	max-width:100% !important;
+	margin:0px 0px 20px 0px !important;
+}
+
+.smooth_slider .smooth_slideri span{
+
+	font-size: 16px !important;
+	line-height: 20px !important;	
+	font-family:"Aller" !important;
+	
+	font-weight:normal;
+	font-style:normal;
+	color:#FFF !important;
+}
+
+
+/*
+ESTE ES EL CSS ADICIONAL PARA LA GALERÍA AÑADIDA */
+*{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.controls{
+  padding: 2%;
+  background: #FFF;
+  color: #dd9933;
+}
+
+label{
+  font-weight: 300;
+  margin: 0 .4em 0 0;
+}
+
+button {
+  display: inline-block;
+  padding: .4em .8em;
+  background: #F5F3ED;
+  border: 0;
+  color: #9BC103 !important;
+  font-size: 16px;
+  font-weight: 300;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+button.active{
+  background: #9BC103;
+  color: #F5F3ED !important;
+}
+button.active:hover{	
+  background: #9BC103;
+}
+
+button:focus{
+  outline: 0 none;
+}
+
+button:hover {
+    background-color: #333;
+    color: #FFF;
+}
+
+
+button + label{
+  margin-left: 1em;
+}
+
+.container{
+  padding: 0% 0% 2% 0;
+  text-align: justify;
+  font-size: 1.4em;
+  background: #FFF;
+  
+  -webkit-backface-visibility: hidden;
+}
+
+.container:after{
+  display: inline-block;
+  width: 100%;
+  border-radius: 2px;
+}
+
+.container .mix,
+.container .gap{
+  display: inline-block;
+  /*width: 100%;*/
+}
+
+
+.container .mix{
+  text-align: left;
+  vertical-align: top;
+  background: #DDD;
+  margin: 10px 5px 0px;
+  display: none;
+  max-width: 250px;
+  max-height: 250px;
+  min-height: 250px;
+  line-height: 150%;
+  border-radius: 40px;
+}
+
+
+
+
+/*Esto es para IMG CAPTION */
+div.wrapper2{
+	float:left; /* important */
+	position:relative; /* important(so we can absolutely position the description div */
+}
+div.description2{
+	position:absolute; /* absolute position (so we can position it where we want)*/
+	bottom:0px; /* position will be on bottom */
+	left:0px;
+	width:100%;
+	/* styling bellow */
+	background: none repeat scroll 0% 0% rgba(6, 6, 6, 0.3);
+	font-size:24pt;
+	color:white;
+	filter:alpha(opacity=60); /* IE transparency */
+}
+p.description_content2{
+	padding:10pt;
+	margin:0px;
+	margin-right: 20px;
+	font-weight: 800;
+	font-size: 14pt;
+	line-height: 20pt;
+	color: #fff !important;
+	text-align: left;
+}
+
+
+
+
+
+/* Esto es para el apartado de PROYE  */
+
+.caption {
+    display: inline-block;
+    position: relative;
+    margin: 0px;
+    overflow: hidden;
+    background: #000;
+    /*border-radius: 10px;*/
+}
+ 
+.caption img {
+    display: block;
+    max-width: 100%;
+    transition: opacity 0.3s ease-in-out;
+    /*border-radius: 6px;*/
+}
+ 
+.caption:hover img {
+    opacity: 0.5;
+}
+
+.caption::after,
+.caption::before {
+    position: absolute;
+    width: 100%;
+    height: 70%;
+    color: #fff;
+    z-index: 1;
+    transition: transform 0.3s ease-in-out;
+}
+
+.caption::after {
+    content: attr(data-date);
+    top: 0;
+    height: 30%;
+    background: none repeat scroll 0% 0% rgba(6, 6, 6, 0.62);
+    font-size: 14pt;
+    font-weight: 800;
+    padding: 20px;
+    transform: translateY(-100%);
+}
+ 
+.caption::before {
+    content: attr(data-description) '...';
+    top: 30%;
+    background: #fff;
+    color: #8A8A8A;
+    /*background: none repeat scroll 0% 0% rgba(242, 117, 69, 1);*/
+    font-size: 14px;
+    padding: 20px;
+    transform: translateY(100%);
+}
+
+.caption:hover::after,
+.caption:hover::before {
+    transform: translateY(0%);
+}
+
+
+.info-despliegue{
+	margin-left: 20%;
+	margin-right: 20%;
+}
+
+.texto-single {
+	 text-align: left;
+    font-size: 16pt;
+    padding-left: 100px;
+    padding-top: 30px;
+    padding-right: 30px;
+    font-family: Source Sans Pro;
+}
+
+
+.img-portada {
+	z-index: 100000;
+	position: relative;
+}
+
+pre {
+    background-color: #FFF !important;
+    border: 0px solid rgba(0, 0, 0, 0.15) !important;
+ }
+ 
+ 
+input[type="text"], input[type="email"] {
+	height: 30px !important;
+}
+
+input, textarea, .uneditable-input {
+    width: 406px !important;
+}
+
+form {
+    text-align: center !important;
+}
+
+span.wpcf7-form-control-wrap {
+    float: none !important;
+}
+
+
+#work-2 h1 p{
+	color: #545454;
+	text-align: center;
+}
+
+#work-2 h1{
+	font-weight: 400; 
+	text-transform: uppercase;
+}
+
+
+.instalaciones { 
+	//font-size:17pt; 
+  font-weight: 600;
+}
+
+.instalaciones ul { 
+	list-style-image: url("http://iconshow.me/media/images/ui/ios7-icons/png/512/arrow-right-c.png"); 
+	font-size:18px; }
+
+
+.instalaciones li {
+	display: block;
+	margin: 10px 5px 0 5px;
+	vertical-align: top;
+	/*height: 250px;*/
+	width: 100%;
+	line-height:30px;
+}
+
+
